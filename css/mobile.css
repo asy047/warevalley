@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/*===========media query===========*/
+/*600px 이하*/
+@media screen and (max-width: 640px) {
+	html {font-size: 10px}
+	body {font-size: 1.4rem;}
+	.wrap {width: 100%; overflow: hidden}
+	.inner {width: 100%; margin: 0 auto;}
+	
+	/*common*/
+	section {padding: 30px 0 20px}
+	section h2 {margin-bottom: 20px; font-size: 2.6rem;}
+	section h3 {font-size: 16px;}
+	/*header*/
+	#main-header {position: relative; right: 0; bottom: 0;}
+	#main-header .inner .logo {top: 50%; left: 53%; transform: translate(-50%,-50%); }
+	#main-header .inner .logo > a {width: 160px;}
+	#main-header .mobile-menu {bottom: 50%; transform: translateY(50%); width: 50px; font-size: 25px; z-index: 10}
+	#main-header .user-gnb {
+		width: 100%;
+		top: 140px; right: -13%; 
+	}
+	#main-header .user-gnb li {
+		margin: 0 10px;
+	}
+	#main-header .user-gnb li a{
+		padding: 5px 8px;
+		border: 1px solid #fff;
+		color: #fff;
+	}
+	#main-header .nav-area {
+		position: relative;
+		top: 0; right: -100%;
+		width: 100vw; height: 100vh;
+		background: rgba(0, 0, 0, 0.7);
+		text-align: center;
+		z-index: 10;
+		transition: .3s;
+	}
+	#main-header .nav-area.on {right: 0;}
+	#main-header .gnb {bottom: 35%; right: 50%; transform: translateX(50%)}
+	#main-header .gnb > ul {width: 100%;}
+	#main-header .gnb > ul > li {
+		float: none; 
+		margin: 0 auto;
+	}
+	#main-header .gnb .sub-menu{display: none; width: 90%; left: 0; margin-left: 0;}
+	
+	/*product*/
+	#product .inner {padding: 0px; width: 100vw; box-sizing: border-box;}
+	#product .pro-group {width: 100%; margin: 0 auto;}
+	#product .pro-group li {
+		width: 50%;
+		margin: 0 auto;
+	}
+	#product .pro-group li a:before {
+		width: 140px;
+		height: 140px;
+	}
+	#product .pro-group span {
+		height: 40px;
+		word-break: keep-all;
+	}
+	
+	/*board*/
+	#board .inner {
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	#board .sup-list li {
+		width: 100%;
+	} 
+	#board .sup-list .text {
+		letter-spacing: -1px;
+	}
+	#board .news-contents {
+		width: 100%;
+	}
+	#board .news-group > div {
+		float: none;
+		width: 100%;
+		
+	}
+	#board .news-group > div + div {margin: 20px 0}
+	#board .news-group ul li {overflow: hidden; height: 24px; white-space: nowrap; text-overflow: ellipsis;} 
+	#board .news-group ul li > a {text-overflow: ellipsis;}
+	/*about Us*/
+	#aboutus .global > dl{
+		height: 50%
+	}
+	#aboutus .global dt {
+		float: none;
+		line-height: 2;
+		width: 100%;
+	}
+	#aboutus .global dd {
+		float: none;
+		margin-top: 10px;
+		width: 100%;
+		padding: 0 20px;
+	}
+	footer address, .copy {word-break: keep-all; padding: 0 20px;}
+}

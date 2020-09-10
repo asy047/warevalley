@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+#main-visual.sub-visual {
+	height: 420px;
+	background-image: url(../img/main_img2.png);
+}
+#main-visual.sub-visual .title-group h1 {
+	letter-spacing: 10px;
+}
+/*location*/
+.location {
+	height: 40px;
+	border-bottom: 1px solid #ccc;
+}
+.location .inner > a,
+.location .inner > div {
+	display: block;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	border-left: 1px solid #ccc;
+}
+.location .inner > .btn-home {
+	width: 40px;
+	text-align: center;
+}
+.location .inner > .btn-home > i {font-size: 20px}
+.location .inner .sel-product {
+	position: relative;
+	width: 160px;
+}
+.location .inner .sel-product .product {
+	display: block;
+	position: relative;
+	margin-left: 15px;
+}
+.location .inner .product:after {
+	content: '\f0d7';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 600;
+	position: absolute;
+	right: 15px;
+}
+.location .inner .sub-product {
+	display: none;
+	position: relative;
+	width: auto;
+	padding: 8px 15px;
+	background: rgba(255, 255, 255, 0.8);
+	border: 1px solid #ccc;
+	z-index: 10;
+}
+.location .inner .sub-product > a {
+	display: block;
+}
+.location .inner .sub-product.on {display: block;}
+
+/*contents*/
+.contets {padding-top: 50px;}
+.contents article {padding: 30px 0 40px;}
+.contents article:first-child {border-bottom: 1px solid #ddd;}
+.contents p {margin-bottom: 15px;}
+.contents .text1 {
+	margin-bottom: 20px;
+	font-size: 32px;
+	font-weight: bold;
+	color: #222;
+}
+.contents .text1 > span {color: #5ea33a}
+.contents article .btn_download {
+	display: inline-block;
+	padding: 6px 25px;
+	border: 1px solid #5ea33a;
+}
+.contents article .btn_download:after {
+	content: '\f105';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 600;
+	margin-left: 15px;
+	color: #5ea33a;
+}
+.contents .info-list {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.contents .info-list li {
+	float: left;
+	width: 50%;
+	margin-bottom: 40px;
+	background: no-repeat left center / 75px;
+}
+.contents .info-list li:nth-child(1) {
+	background-image: url(../img/cloud-computing.png)
+}
+.contents .info-list li:nth-child(2) {
+	background-image: url(../img/file.png)
+}
+.contents .info-list li:nth-child(3) {
+	background-image: url(../img/get-money.png)
+}
+.contents .info-list li:nth-child(4) {
+	background-image: url(../img/ico10.png)
+}
+.contents .info-list .info-text {
+	margin-left: 140px;
+}
